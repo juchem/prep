@@ -10,7 +10,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     111111111     111111111
     111111111     111111111
     110000011     112222211
-    1100x0011    ==>    112222211
+    1100x0011 ==> 112222211
     110000011     112222211
     111111111     111111111
     111111111     111111111
@@ -22,7 +22,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     111111111     111111111
     111111111     112222211
     110000011     120000021
-    1100x0011    ==>    120000021
+    1100x0011 ==> 120000021
     110000011     120000021
     111111111     112222211
     111111111     111111111
@@ -51,7 +51,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
   19. Write a function that given a list of items and weights return a random item in the list with probability relative to the weights
   20. Given a sorted list of intervals, how do you tell if at least two overlap?
   21. Parse a string into a binary tree. E.g.:
-    * Input: A(B(D, E), C(,F))
+    * Input: `A(B(D, E), C(,F))`
     * Output: the memory representation of the tree
 
       ```
@@ -83,7 +83,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
       K   L M   N O   P Q   R
       ```
 
-    * Output: A, C, B, D, E, F, J, I, H, G, K, L, M, N, O, P, Q, R
+    * Output: `A, C, B, D, E, F, J, I, H, G, K, L, M, N, O, P, Q, R`
   24. Having no pointer to the parent and given only the left and right pointers, correctly set the sibling pointer of a binary tree (a given node should point to the next node on its right, in the same level - they don't need to have the same parent)
 
     ```
@@ -137,7 +137,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     2. In sub-linear time
   36. Given two binary trees, A and B, implement a function to check if both are equal (structure and value-wise). You don't have a pointer to the parent on the nodes.
   37. Given two binary trees, A and B, implement a function to check if B is a sub-tree of A (structure and value-wise). You don't have a pointer to the parent on the nodes.
-  38. What’s the size in bytes of a C struct { char a; int b; }?
+  38. What’s the size in bytes of a `struct { char a; int b; }` in the C programming language?
   39. Implement the power function int power(int base, int exponent)
   40. How would you implement the data structure for the code completion feature on an IDE?
   41. Given a stream of items where one element appears an odd number of times, and every other appears an even number of times, how would you find the former?
@@ -175,15 +175,15 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     * for instance: pattern=foo`*`, string=foo.txt, should return true
     * for instance: pattern=foo`*`.txt, string=foo.txt.txt, should return true
   62. [ref](https://github.com/juchem/prep/blob/master/62-partition_uniques_duplicates) Given a sorted array with some duplicate elements, move the additional duplicates to to the end of the array. The unique elements of the output array should be on the left and sorted, the duplicates should be on the right in any order (the elements between curly braces in the example below):
-    * Example: input=1,2,2,2,3,3,4,5,5 output=1,2,3,4,5,{2,2,3,5}
-    * Example: input=1,2,2,3,4 output=1,2,3,4,{2}
+    * Example: input=`1,2,2,2,3,3,4,5,5` output=`1,2,3,4,5,{2,2,3,5}`
+    * Example: input=`1,2,2,3,4` output=`1,2,3,4,{2}`
   63. Implement text justification: given an input string, split it in multiple lines and insert spaces evenly between the words so that the line takes exactly the given width
     * You can output to stdout
-    * The call justify(“this is just a sample”, 8) should output (dots representing white spaces):
+    * The call `justify(“this is just a sample”, 8)` should output (dots representing white spaces):
 
       ```
-      "this  is"
-      "just  .a"
+      "this..is"
+      "just...a"
       "sample"
       ```
 
@@ -199,7 +199,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
       list4 = d, v
       ```
 
-    * Iterating over list1 yields 1, 2, 3, A, B, d, v, 4, 9, 0, 7, H
+    * Iterating over list1 yields `1, 2, 3, A, B, d, v, 4, 9, 0, 7, H`
   67. [ref](https://github.com/juchem/prep/blob/master/67-list_cycle) How do you detect a cycle in a linked list? How do you break it?
   68. Imagine you have two linked lists, and at some point they merge like in a Y shape. How do you detect at which node the merge occured?
 
@@ -219,7 +219,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     111111111     111101101
     111111101     000000000
     111111111     111101101
-    111101111    ==>    000000000
+    111101111 ==> 000000000
     111111111     111101101
     111111111     111101101
     111111111     111101101
@@ -243,7 +243,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
 
   75. Given a BST of _n_ integers and a target integer _v_, find the node that is the closest to _v_ (closest means diff(_v_, node.value) is minimum)
   76. Given a sequence of positive integers, find the sub-sequence of non-adjacent elements having the maximum sum.
-    * Example: For the sequence {10, 11, 15, 20, 80, 90}, the answer is {11, 20, 90}
+    * Example: For the sequence `(10, 11, 15, 20, 80, 90)`, the answer is `(11, 20, 90)`
   77. [ref](https://github.com/juchem/prep/blob/master/77-array_shift) Given a sorted array with _n_ elements which has been shifted by _k_ positions, where _k < n_, find _k_. Examples:
 
     ```
@@ -264,7 +264,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     2. you can't modify the input and speed must be linear
     3. you can't modify the input, speed must be linear and the input may be big
     4. you can't modify the input and memory is scarce
-    5. you can't modify the input, memory usage must be sub-linear and speed must not be quadratic
+    5. you can't modify the input, memory usage must be sub-linear and speed must be sub-quadratic
   81. Implement quicksort
     1. Implement median-of-3 pivot choosing algorithm
     2. Make quicksort O(lg n) space as opposed to the original O(n)
