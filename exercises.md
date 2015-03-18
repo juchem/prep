@@ -86,7 +86,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     * Output: `A, C, B, D, E, F, J, I, H, G, K, L, M, N, O, P, Q, R`
   24. Having no pointer to the parent and given only the left and right pointers, correctly set the sibling pointer of a binary tree (a given node should point to the next node on its right, in the same level - they don't need to have the same parent)
 
-    ```
+    ```c++
     struct tree_node {
       tree_node *left,
       tree_node *right,
@@ -272,3 +272,30 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     4. Turn your quicksort implementation into introsort
   82. Implement deep copy of a graph data structure
   83. Implement binary search on a comma-separated values (CSV) file. The records in the file have a variable size.
+  84. Given that you have the following functionality in a library
+
+    ```c++
+    struct writer {
+      // rest of class omitted
+      void serialize_byte(char b);
+    };
+
+    struct reader {
+      // rest of class omitted
+      char deserialize_byte();
+    };
+    ```
+
+    1. Implement
+
+      ```c++
+      void serialize_integer(writer &w, int n);
+      int deserialize_integer(reader &r);
+      ```
+
+    2. Implement
+
+      ```c++
+      void serialize_string(writer &w, std::string const &s);
+      std::string deserialize_string(reader &r);
+      ```
