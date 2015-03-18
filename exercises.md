@@ -120,13 +120,13 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
     * Symmetric:
 
       ```
-      [B, C](A)
+      [A [B, C]]
       ```
 
     * Not symmetric:
 
       ```
-      [D], C](A [B)
+      [A [B [D], C]]
       ```
 
   32. [[ref]](32-pick_random_element) Pick an element in a list with uniform probability, without knowledge of the list size
