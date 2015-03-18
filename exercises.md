@@ -46,7 +46,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
   16. [[ref]](16-k_modes) Find the _k_ most frequent elements
     * in an array
     * in a stream
-  17. [[ref]](17-find_bst_kth_element) Find _k^th^_ largest element in a BST
+  17. [[ref]](17-find_bst_kth_element) Find _k-th_ largest element in a BST
   18. [[ref]](18-square_root) Implement the square root mathematical function: double sqrt(double n)
   19. Write a function that given a list of items and weights return a random item in the list with probability relative to the weights
   20. Given a sorted list of intervals, how do you tell if at least two overlap?
@@ -268,7 +268,7 @@ For items containing a `[ref]` link, a reference implementation is available. Ju
   81. Implement quicksort
     1. Implement median-of-3 pivot choosing algorithm
     2. Make quicksort O(lg n) space as opposed to the original O(n)
-    3. Tweak quicksort to make it O(n lg n) time as opposet to the original (O^2^)
+    3. Tweak quicksort to make it O(n lg n) time as opposed to the original O(n^2)
     4. Turn your quicksort implementation into introsort
   82. Implement deep copy of a graph data structure
   83. Implement binary search on a comma-separated values (CSV) file. The records in the file have a variable size.
