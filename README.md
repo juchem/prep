@@ -1,6 +1,6 @@
 Coding exercises to stay in shape.
 
-Click [here to see the exercises list](https://github.com/juchem/prep/blob/master/exercises.md).
+Click [here to see the exercises list](exercises.md).
 
 A reference implementation in C++11 is provided for most exercises and conveniently linked from the exercises list.
 
